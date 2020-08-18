@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<title>
+</title>
+<script>
+function abc(a)
+{
+  var b=a.age.value;
+  var c=a.mn.value.length;
+  if(b<20||b>35)
+{
+   alert("Age should be greater than 20 and less than 35.");
+   return 0;
+   
+}
+ if(c!=10)
+{
+   alert("Number should be of 10 digits.");
+   return 0;
+}
+}
+</script>
+<style>
+body
+{
+ background-image:url("image/img.jpeg");
+}
+form
+{
+ background-color:white;
+ font-size:20px;
+ border:2px solid black;
+}
+table
+{
+ border:3px solid black;
+}
+input
+{
+  width=100%;
+  height=100%;
+  border:1px solid red;
+   border-radius:5px;
+  background-color:white; 
+} 
+td,th
+{
+ border:3px solid black;
+}
+div
+{
+ background-color:none;
+ font-size:20px;
+ color:red;
+align:center;
+}
+#s
+{
+ border:none;
+ align:center;
+}
+#td1
+{
+ border:none;
+}
+a
+{
+ color:red;
+ text-decoration:none;
+}
+a:hover
+{
+ color:blue;
+ text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+<h1 align="center">Welcome we are having a number of job oppurtunities for you.</h1>
+<p align="center">From our Employees,We Accept that they will stand for sake of well being of our</br>
+hospital.And will alwys ready to take on challenges.we want A good human being who treats our  coustemer<br>
+well.And Ofcourse you should have good knowledge in your Feild.</br></p>
+<table align="center">
+<tr>
+<th>S.No</th>
+<th>Job title</th>
+<th>No of Vacencies.</th>
+</tr>
+<td>1</td>
+<td>Surgeon.</td>
+<td>5</td>
+<tr>
+<td>2</td>
+<td>Nurse</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pharmacy Incharge.</td>
+<td>12</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Dentist.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ambulace Driver.</td>
+<td>6</td>
+</tr>
+<tr>
+</tr>
+</table>
+<form align="center" autofill>
+First Name: <input type="text" placeholder="arun" required></br>
+Second Name:<input type="text" placeholder="arun" required></br>
+Age        :<input type="number" name="age" placeholder="12" required></br>
+Mobile no. :<input type="number" name="mn" placeholder="9999999999" required></br>
+DOB        :<input type="date"  required></br>
+<h2>Highest Qalification:</h2><br>
+12th<input type="radio" name="arun" value="12th"required>
+
+Graduation from Non-Medical<input type="radio" name="arun" value="nm"required>
+B.Phrama<input type="radio" name="arun" value="BP" required>
+M.pharma<input type="radio" name="arun" value="MP" required>
+MBBS<input type="radio" name="arun" value="BBs" required></br>
+<h2>Job Title:</h2>
+<select>
+<option value="1">Surgeon.</option>
+<option value="2">Nurse</option>
+<option value="3">Pharmacy Incharge.</option>
+<option value="4">Dentist.</option>
+<option value="5">Ambulace Driver.</option>
+</select> </br>
+<input type="submit" value="submit" onClick="abc(this.form)">      
+</form>
+<div>
+  <table id="s" style="background-color:none;">
+ </tr>
+ <td id="td1"><a href="homepage.html">Home</a></td>
+  <td id="td1"><a href="">Login</td></a>
+ <td id="td1"><a href="">CarrierPage</a></td>
+<td id="td1"><a href="">Feedback</a></td>
+<td id="td1"><a href="">Contact Us</a></td>
+<td id="td1"><a href="services.html">Services</td>
+<td id="td1"><a href="">Carrier Page</a></td>
+   <td id="td1"><a href="opdpage.html">OPD</a></td>
+   </tr>
+ </table>
+   </div>
+</body>
+</html>

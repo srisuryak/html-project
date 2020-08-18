@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<title>
+</title>
+<script>
+function abc(a)
+{
+ var b=a.age.value;
+ var c=a.nm.length;
+ if(b<=10||b>=100)
+{
+alert("Age is not in range.");
+return;
+}
+ if(c!=10)
+{
+alert("Number Should br of 10 digit.");
+return;
+}
+}
+</script>
+<style>
+textarea
+{
+  border:1px solid red;
+   border-radius:5px;
+  background-color:white; 
+}
+input
+{
+  width=100%;
+  height=100%;
+  border:1px solid red;
+   border-radius:5px;
+  background-color:white; 
+} 
+body
+{
+ background-image:url("image/img.jpeg");
+}
+div
+{
+ color:red;
+}
+
+a
+{
+ color:red;
+ font-style:none; 
+}
+a:hover
+{
+ color:blue;
+}
+</style>
+
+</head>
+<body>
+<h1 align="center">ICU Service</h1>
+<p align="center">We began providing ICU services from this year. Today our crews continue to deliver professional, compassionate healthcare in the safest and most efficient manner possible. Our incorporation of the latest technology, system innovation and strategic partnerships allow us to provide care that is second to none.
+
+We are the designated provider for 911 calls in all areas of Country.
+ We provide continued care during inter-facility transfer of patients to facilities with specialty treatment such as cardiac surgery, neurosurgery or a trauma center. Community involvement includes school visits, medical stand-by at sporting events and large festivals, and community medicine. Our units are equipped and our staff trained to provide Advanced Life Support services 24/7, 365 days a year.
+ Our crews will respond to over 4000 requests for help each year.</p>
+<h2 align="center">Please Fill this form if you want to use our services.</br></h2>
+<form border="2px" align="center">
+Enter your Name:<input type="text" required></br>
+Enter your Age:<input type="number" name="age" required></br>
+Enter your Mobile Number:<input type="number" name="nm" required></br>
+Enter your Address:<textarea></textarea></br>
+<input type="submit" value="submit" onClick="abc(this.form)"></br>
+</form method="post">
+<div align="center">
+<table>
+<tr>
+<td>
+<a href="homepage.html">
+Homepage
+</a>
+</td>
+<td>
+<a href="opdpage.html">
+OPD
+</a>
+</td>
+<td>
+<a href="">
+Carrier Page
+</a>
+</td>
+<td>
+<a href="services.html">
+Services
+</a>
+</td>
+<td>
+<a href="">
+Feedback
+</a>
+</td>
+<td>
+<a href="">
+Login
+</a>
+</td>
+<td>
+<a href="">
+Contact us
+</a>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

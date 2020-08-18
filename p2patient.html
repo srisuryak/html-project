@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>
+p2:patient;
+</title>
+<script>
+function abc()
+{
+window.alert("No database available.Unable to process Result.");
+}
+function abc(a)
+{
+ var b=a.nm2.value;
+ var c=a.nm1.value.length;
+ if(b>=100)
+{
+alert("Age is not in range.");
+ return 0;
+}
+ if(c!=8)
+{
+alert("Id Should be of 8 digit.");
+return 0;
+}
+}
+
+</script>
+<style>
+body
+{           
+       background-image:url("image/img.jpeg");
+       align:center;
+}
+input
+{
+  width=100%;
+  height=100%;
+  border:1px solid red;
+   border-radius:5px;
+  background-color:green yellow; 
+} 
+</style>
+</head>
+<body>
+<h1 align="center">Please,Enter the details of patient here.</br></h1>
+<form align="center" width="400px" height="400px">
+<legend>
+Name of patient:
+<input type="text" value="Nikhil" required></br>
+Age of patient:
+<input type="number" value="23" name="nm2" required></br>
+id of patient:
+<input type="number" value="11705705" name="nm1" required></br>
+enter the value of money:
+<input type="number" value="not mandatory"><br>
+<input type="submit" value="check">
+<input type="submit" value="payment">
+<input type="submit" value="submit" onclick="abc(this.form)">
+</legend>
+</form>
+</body> 
+</html>

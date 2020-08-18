@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page and registration form</title>
+	<link  rel="stylesheet" type="text/css"  href="csstyle.css">
+</head>
+<style>
+    #sub
+{
+    background-color:green;
+}
+</style>
+	</head>
+<script>
+ function abc(a)
+{
+ var e=a.firstname.value.length;
+ var f=a.lastname.value.length;
+ var b=a.username.value.length;
+ var c=a.password.value.length;
+ var g=a.confirmpassword.value.length;
+ var d=a.username.value;
+if(e==0)
+{
+alert("First name should not be empty");
+return;
+} 
+if(f==0)
+{
+alert("Last name should not be empty");
+return;
+}
+ if(b==0)
+{
+  alert("User-name should not be Empty");
+  return;
+}
+var str=d.slice(0,1);
+if(str=="_" || str=="@"|| str=="," ||str=="&"||str=="#"|| str=="!"||str==0||str==1||str==2||str==3||str==4||str==5||str==6||str==7||str==8||str==9)
+{
+	alert("Username should not start with @ # , & ! _ and number");
+	return;
+}
+if(c==0)
+{
+alert("Password should not be empty");
+}
+if(c>=12||c<6)
+{
+ alert("length of password should be between 6 to 12");
+ return;
+}
+if(c!=g)
+{
+alert("Password doesn't match with previous");
+return;
+}
+var te=document.forms["anything"]["email"].value;
+var atpos=te.indexOf("@");
+var dotpos=te.lastIndexOf(".");
+if(atpos<1 || dotpos<atpos+2||dotpos+2>te.length)
+{
+alert("Please enter a valid email address.");
+return;
+}
+var w=a.dob.value.length;
+if(w==0)
+{
+alert("please fill your date of birth");
+return;
+}
+var k=a.adr.value.length;
+if(k>=40 || k<=10)
+{
+alert("Please fill a valid adress");
+return;
+}
+}
+</script>
+<body background="32.jpg">
+<div class="Login-Page">
+<div class="form">
+	<form class="register-form" name="anything" id="f" method="post">
+		<input type="text" placeholder="First-name" name="firstname">
+		<input type="text" placeholder="Last-name" name="lastname">
+		<input type="text" placeholder="user-name"  name="username">
+		<input type="password" placeholder="Password" name="password">
+		<input type="password" placeholder="Confirm Password" name="confirmpassword">
+		<input type="text" placeholder="Email id" name="email">
+		<input type="date" value="DOB" name="dob">
+		<input type="text" placeholder="Address" name="adr">
+		<input type="submit" value="Creat Account" onClick="abc(this.form)" id="sub">
+		<h3><p class="massage">Already Registered?<a href="login.html">Login</a></p></h3><hr>
+<pre><h3>1.Both field should not be rest as blank.
+2.Password must be of 6 to 12 characters.
+3.Username should not start with @ # , & ! _ and number.</h3>
+</pre>
+</div>
+</body>
+</html>

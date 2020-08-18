@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page and registration form</title>
+	<link rel="stylesheet" type="text/css" href="csstyle.css">
+       <style>
+    #sub
+{
+    background-color:green;
+}
+</style>
+	</head>
+<script>
+ function abc(a)
+{
+ var b=a.username.value.length;
+ var c=a.password.value.length;
+ var d=a.username.value;
+ if(b==0||c==0)
+{
+  alert("User-name and password should not be Empty.");
+  return;
+}
+if(c>=12||c<6)
+{
+ alert("length of password should be between 6 to 12");
+ return;
+}
+var str=d.slice(0,1);
+if(str=="_" || str=="@"|| str==","||str==0||str==1||str==2||str==3||str==4||str==5||str==6||str==7||str==8||str==9)
+{
+	alert("Username should not start with @ , _ and number");
+	return;
+}
+
+}
+</script>
+<body background="32.jpg">
+<div class="form">
+<div class="Login-Page"> 
+	<form id="f" method="post">
+                       <input type="text" placeholder="user-name" name="username">
+			<input type="password" placeholder="password" name="password">
+			<input type="submit" value="Login" onClick="abc(this.form)" id="sub">
+			<h3><p class="massage">Not Registerd?<a href="register.html">Register</a></p></h3>
+			</form>
+</div>
+</div>
+</body>
+</html>

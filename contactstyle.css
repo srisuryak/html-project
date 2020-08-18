@@ -1,0 +1,76 @@
+body
+{
+	background-image:url("32.JPG");
+	background-size: auto;
+	height: auto;
+	font-family: "roboto";
+}
+.container
+{
+	max-width: 800px;
+	height: 620px;
+   margin: 50px auto;
+box-shadow: 0 0 20px rgba(72,98,85,0.6)
+box-sizing:content-box;
+padding: 40px;
+border-radius: 5px;
+}
+p
+{
+text-align: center;
+letter-spacing: 1px;
+font-size: 65px;
+margin-bottom: 20px;
+color: brown;
+}
+pre
+{
+	font-size: 16px;
+	color: black;
+}
+span
+{
+	color:red;
+	width: 8;
+	height: 8;
+	font-size: 22px;
+}
+.input,.msg .area
+{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	border: 2px solid #e9eaea;
+	font-size: 14px;
+	border-radius: 10px;
+	outline: none;
+	transform: all 0.5s ease;
+}
+.login .input:last-child
+{
+	margin-right: 0;
+}
+.msg .area
+{
+	height: 150px;
+}
+.btn
+{
+	width: 250px;
+	background: green;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 6px;
+	margin: 1px auto;
+	color: black;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.input:focus, .msg .area:focus
+{
+	border:2px solid #ffffff;
+}

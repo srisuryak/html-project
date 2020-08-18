@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>
+p2:docter;
+</title>
+<script>
+function abc(a)
+{
+  var b=a.id.length;
+ if(b!=8)
+{
+ alert("Id should be of 8 digit");
+}
+window.alert("No database available.Unable to process Result.");
+}
+</script>
+<style>
+input
+{
+  width=100%;
+  height=100%;
+  border:1px solid red;
+   border-radius:5px;
+  background-color:green; 
+} 
+select
+{
+  border:1px solid red;
+   border-radius:5px;
+  background-color:green;
+}
+         #s1
+{
+        margin:100px 100px 100px 100px;
+}
+       body
+{
+       background-image:url("image/img.jpeg");
+}
+          div   
+           {
+              position:fixed; 
+              background-color:red;
+              z-index:10;
+              width:100%; 
+              align:bottom;
+             }
+        td:hover
+         {
+           color:blue;
+           font-size:20px;
+            padding:20px;
+            spacing:60px;
+           }
+        td
+      {
+         color:white;
+         font-size:20px;
+          padding:20px;
+         spacing:60px;
+        }
+a
+{
+   color:white;
+    text-decoration:none;
+}
+a:hover
+{
+ color:blue;
+   tetx-decoration:none;
+} 
+</style>
+</head>
+<body>
+<p>
+ <div>
+  <table>
+ </tr>
+ <td><a href="homepage.html">Home</a></td>
+  <td><a href="">Login</td></a>
+ <td><a href="">CarrierPage</a></td>
+<td><a href="">Feedback</a></td>
+<td><a href="">Contact Us</a></td>
+<td><a href="services.html">Services</td>
+<td><a href="carrier.html">Carrier Page</a></td>
+   <td><a href="opdpage.html">OPD</a></td>
+   </tr>
+ </table>
+   </div>
+</p> 
+<p id="s1" align="center">Please,Enetr the details of docter here.</br></p>
+<form>
+<legend>
+Name of docter:
+<input type="text" value="Dr.Arun" required></br>
+Department of docter:</br>
+<input type="radio" name="Department" value="other">other
+<input type="radio" name="Department" value="Surgeon">Surgeon
+<input type="radio" name="Department" value="phisio" checked>Phsiotherapist
+<input type="radio" name="Department" value="Ortho">Ortho
+<input type="radio" name="Department" value="Cardiology">Cardiology
+<input type="radio" name="Department" value="nuero">Nuero</br>
+id of docter:
+<input type="number" value="11707098" name="id" required></br>
+Position of docter:
+<select reqired>
+<option value="Sur">Surgeon</option>
+<option value="SeD">Senior Docter</option>
+<option value="CMO">CMO</option>
+<option value="Ad">Assistant docter</option>
+</select></br>
+<input type="submit" value="check">
+<input type="submit" value="submit" onclick="abc(this.form)">
+</legend>
+</form>
+</body>
